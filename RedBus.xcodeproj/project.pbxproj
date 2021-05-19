@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D12E29126542143001B7E97 /* RBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12E29026542143001B7E97 /* RBConstants.swift */; };
 		9DCCE595265282630043FA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE594265282630043FA49 /* AppDelegate.swift */; };
 		9DCCE597265282630043FA49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE596265282630043FA49 /* SceneDelegate.swift */; };
-		9DCCE599265282630043FA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE598265282630043FA49 /* ViewController.swift */; };
 		9DCCE59C265282630043FA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCCE59A265282630043FA49 /* Main.storyboard */; };
 		9DCCE59F265282630043FA49 /* RedBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE59D265282630043FA49 /* RedBus.xcdatamodeld */; };
 		9DCCE5A1265282640043FA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCCE5A0265282640043FA49 /* Assets.xcassets */; };
 		9DCCE5A4265282640043FA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCCE5A2265282640043FA49 /* LaunchScreen.storyboard */; };
 		9DCCE5AF265282650043FA49 /* RedBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE5AE265282650043FA49 /* RedBusTests.swift */; };
 		9DCCE5BA265282650043FA49 /* RedBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE5B9265282650043FA49 /* RedBusUITests.swift */; };
+		9DCCE5C8265282980043FA49 /* RBNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE5C7265282970043FA49 /* RBNetworkService.swift */; };
+		9DCCE5CA26529B7F0043FA49 /* BusesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE5C926529B7F0043FA49 /* BusesListViewController.swift */; };
+		9DCCE5CD2652A1710043FA49 /* BusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE5CB2652A1710043FA49 /* BusTableViewCell.swift */; };
+		9DCCE5CE2652A1710043FA49 /* BusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCCE5CC2652A1710043FA49 /* BusTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D12E29026542143001B7E97 /* RBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBConstants.swift; sourceTree = "<group>"; };
 		9DCCE591265282630043FA49 /* RedBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCCE594265282630043FA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DCCE596265282630043FA49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DCCE598265282630043FA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DCCE59B265282630043FA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DCCE59E265282630043FA49 /* RedBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedBus.xcdatamodel; sourceTree = "<group>"; };
 		9DCCE5A0265282640043FA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,10 @@
 		9DCCE5B5265282650043FA49 /* RedBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCCE5B9265282650043FA49 /* RedBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBusUITests.swift; sourceTree = "<group>"; };
 		9DCCE5BB265282650043FA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DCCE5C7265282970043FA49 /* RBNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBNetworkService.swift; sourceTree = "<group>"; };
+		9DCCE5C926529B7F0043FA49 /* BusesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusesListViewController.swift; sourceTree = "<group>"; };
+		9DCCE5CB2652A1710043FA49 /* BusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTableViewCell.swift; sourceTree = "<group>"; };
+		9DCCE5CC2652A1710043FA49 /* BusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,11 @@
 			children = (
 				9DCCE594265282630043FA49 /* AppDelegate.swift */,
 				9DCCE596265282630043FA49 /* SceneDelegate.swift */,
-				9DCCE598265282630043FA49 /* ViewController.swift */,
+				9D12E29026542143001B7E97 /* RBConstants.swift */,
+				9DCCE5CB2652A1710043FA49 /* BusTableViewCell.swift */,
+				9DCCE5CC2652A1710043FA49 /* BusTableViewCell.xib */,
+				9DCCE5C7265282970043FA49 /* RBNetworkService.swift */,
+				9DCCE5C926529B7F0043FA49 /* BusesListViewController.swift */,
 				9DCCE59A265282630043FA49 /* Main.storyboard */,
 				9DCCE5A0265282640043FA49 /* Assets.xcassets */,
 				9DCCE5A2265282640043FA49 /* LaunchScreen.storyboard */,
@@ -236,6 +248,7 @@
 			files = (
 				9DCCE5A4265282640043FA49 /* LaunchScreen.storyboard in Resources */,
 				9DCCE5A1265282640043FA49 /* Assets.xcassets in Resources */,
+				9DCCE5CE2652A1710043FA49 /* BusTableViewCell.xib in Resources */,
 				9DCCE59C265282630043FA49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D12E29126542143001B7E97 /* RBConstants.swift in Sources */,
+				9DCCE5CD2652A1710043FA49 /* BusTableViewCell.swift in Sources */,
+				9DCCE5C8265282980043FA49 /* RBNetworkService.swift in Sources */,
 				9DCCE59F265282630043FA49 /* RedBus.xcdatamodeld in Sources */,
-				9DCCE599265282630043FA49 /* ViewController.swift in Sources */,
 				9DCCE595265282630043FA49 /* AppDelegate.swift in Sources */,
+				9DCCE5CA26529B7F0043FA49 /* BusesListViewController.swift in Sources */,
 				9DCCE597265282630043FA49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
