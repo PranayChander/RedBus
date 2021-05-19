@@ -29,12 +29,10 @@ class BusTableViewModel {
     let calendar = Calendar.current
 
     var departureTime: String {
-        guard let depDate = self.bus.departureTime,
-              let depDateInDate = jsonDateFormatter.date(from: self.bus.departureTime)
-        else {
+        guard let depDate = self.bus.departureTime else {
             return "NA"
         }
-        let components = calendar.dateComponents([.hour, .minute], from: depDateInDate)
+        let components = calendar.dateComponents([.hour, .minute], from: depDate)
 
         guard let hour = components.hour, let minute = components.minute else {
             return "NA"
@@ -43,12 +41,10 @@ class BusTableViewModel {
     }
 
     var arrivalTime: String {
-        guard let depDate = self.bus.arrivalTime,
-              let depDateInDate = jsonDateFormatter.date(from: depDate)
-        else {
+        guard let arrDate = self.bus.arrivalTime else {
             return "NA"
         }
-        let components = calendar.dateComponents([.hour, .minute], from: depDateInDate)
+        let components = calendar.dateComponents([.hour, .minute], from: arrDate)
 
         guard let hour = components.hour, let minute = components.minute else {
             return "NA"
@@ -101,7 +97,7 @@ class BusTableViewCell: UITableViewCell {
         self.fare.text =  viewModel.fare
         self.rating.text = viewModel.rating
 
-        guard let busLogoURL = self.viewModel?.bus.busLogo else {
+        guard let busLogoURL = self.viewModel?.bus.busLogoUrl else {
             return
         }
         RBNetworkService.getBusLogo(url: busLogoURL) { image in

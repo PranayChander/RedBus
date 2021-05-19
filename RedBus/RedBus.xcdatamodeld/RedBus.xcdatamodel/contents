@@ -11,15 +11,16 @@
         <attribute name="isSleeper" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="travelsName" optional="YES" attributeType="String"/>
+        <relationship name="data" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBData" inverseName="busList" inverseEntity="RBData"/>
     </entity>
     <entity name="RBData" representedClassName="RBData" syncable="YES" codeGenerationType="class">
         <attribute name="currency" optional="YES" attributeType="String"/>
         <attribute name="destination" optional="YES" attributeType="String"/>
         <attribute name="source" optional="YES" attributeType="String"/>
-        <relationship name="busList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bus"/>
+        <relationship name="busList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bus" inverseName="data" inverseEntity="Bus"/>
     </entity>
     <elements>
+        <element name="Bus" positionX="-54" positionY="0" width="128" height="194"/>
         <element name="RBData" positionX="-63" positionY="-18" width="128" height="89"/>
-        <element name="Bus" positionX="-54" positionY="0" width="128" height="179"/>
     </elements>
 </model>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusTypeTableViewCell" rowHeight="117" id="KGk-i7-Jjw" customClass="BusTypeTableViewCell" customModule="RedBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1BD-2l-c67">
+                        <rect key="frame" x="10" y="5" width="314" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAK-rl-VbG">
+                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I2N-pZ-vbm">
+                                <rect key="frame" x="0.0" y="30.5" width="282.5" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1s-z3-Fry">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="22"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="AC" image="snow" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="busTypeSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wmH-On-y2Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9g-wr-lb2">
+                                        <rect key="frame" x="146.5" y="0.0" width="136" height="22"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Non AC" image="sun.min.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="busTypeSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zqe-CJ-7TD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qNi-bA-vIW"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-de-OCk">
+                                <rect key="frame" x="0.0" y="57.5" width="282.5" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf7-W7-1rt">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="22"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Seater" image="bus.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="busTypeSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="D5C-TQ-x2L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-hO-39X">
+                                        <rect key="frame" x="146.5" y="0.0" width="136" height="22"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Sleeper" image="bed.double.fill" catalog="system">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="busTypeSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LZj-bY-mFr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="I2N-pZ-vbm" firstAttribute="width" secondItem="1BD-2l-c67" secondAttribute="width" multiplier="0.9" id="ceG-y7-ybz"/>
+                            <constraint firstItem="wQY-de-OCk" firstAttribute="height" secondItem="I2N-pZ-vbm" secondAttribute="height" id="h3k-tX-dDW"/>
+                            <constraint firstItem="wQY-de-OCk" firstAttribute="width" secondItem="I2N-pZ-vbm" secondAttribute="width" id="xu8-C2-WX9"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1BD-2l-c67" secondAttribute="trailing" constant="10" id="DV4-MQ-zHP"/>
+                    <constraint firstAttribute="bottom" secondItem="1BD-2l-c67" secondAttribute="bottom" constant="5" id="Okx-Ro-iDE"/>
+                    <constraint firstItem="1BD-2l-c67" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="o9K-o8-9tl"/>
+                    <constraint firstItem="1BD-2l-c67" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sq2-jh-YS9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="busTypeButtons" destination="E1s-z3-Fry" collectionClass="NSMutableArray" id="SDN-Cw-rzM"/>
+                <outletCollection property="busTypeButtons" destination="O9g-wr-lb2" collectionClass="NSMutableArray" id="iCm-tn-LHn"/>
+                <outletCollection property="busTypeButtons" destination="pf7-W7-1rt" collectionClass="NSMutableArray" id="XLo-UD-651"/>
+                <outletCollection property="busTypeButtons" destination="oiX-hO-39X" collectionClass="NSMutableArray" id="lIq-yK-JST"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="63.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bed.double.fill" catalog="system" width="128" height="82"/>
+        <image name="bus.fill" catalog="system" width="128" height="122"/>
+        <image name="snow" catalog="system" width="121" height="128"/>
+        <image name="sun.min.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
